@@ -2,6 +2,7 @@
   "name": "atoms-party",
   "version": "1.0.2",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev:client": "vite",
     "dev:server": "tsx watch src/server/server.ts",
