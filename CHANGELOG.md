@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.1...1.0.2) (2026-11-07)
+
+
+### Bug Fixes
+
+* added Dockerfile ([b28cc0e](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/b28cc0ec034956be3662e63fa889338f628db27b))
+
 ## [1.0.1](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.0...1.0.1) (2026-11-05)
 
 
