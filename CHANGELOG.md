@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.7...1.0.8) (2026-11-07)
+
+
+### Bug Fixes
+
+* esbuild ([7990cfa](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/7990cfa2b498bdb30596970f38b8fbf44b4ef0e2))
+
 ## [1.0.7](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.6...1.0.7) (2026-11-07)
 
 ## [1.0.6](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.5...1.0.6) (2026-11-07)
