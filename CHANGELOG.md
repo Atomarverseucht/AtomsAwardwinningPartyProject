@@ -1,3 +1,5 @@
+## [1.0.5](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.4...1.0.5) (2026-11-07)
+
 ## [1.0.4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.3...1.0.4) (2026-11-07)
 
 
