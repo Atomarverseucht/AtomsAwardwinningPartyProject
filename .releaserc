@@ -42,13 +42,6 @@
     ],
     "@semantic-release/changelog",
     [
-      "@semantic-release/exec",
-      {
-        "prepareCmd": "npm ci && npm version --allow-same-version --no-commit-hooks --no-git-tag-version ${nextRelease.version}",
-        "publishCmd": "npm run <% if (branch.name == 'dev') { %>dev-deploy<% } else { %>deploy<% } %>"
-      }
-    ],
-    [
       "@semantic-release/git",
       {
         "assets": [
