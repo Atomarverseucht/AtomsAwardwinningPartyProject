@@ -4,7 +4,7 @@ import helmet from "helmet";
 import { createServer } from "http";
 import { Server} from "socket.io";
 import {Room} from "./room";
-import {clientPayload} from "../shared/Payload";
+import type {clientPayload} from "../shared/Payload";
 
 const PORT = process.env.PORT || 3000;
 export let rooms = new Map<string, Room>();
