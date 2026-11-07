@@ -1,4 +1,4 @@
-name: Create Release
+name: Release and Publish Container
 
 on:
   workflow_dispatch:
@@ -9,30 +9,73 @@ on:
 
 jobs:
   release:
-    name: Release
+    name: Semantic Release
     runs-on: ubuntu-latest
+    outputs:
+      new_release_published: ${{ steps.semantic.outputs.new_release_published }}
+      new_release_version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-    
-    - name: Semantic Release
-      uses: cycjimmy/semantic-release-action@v6
-      with:
-        tag_format: ${version}
-        branches: |
-          [
-            'main',
-            {
-              name: 'dev',
-              prerelease: true
-            }
-          ]
-        extra_plugins: |
-          @semantic-release/changelog
-          @semantic-release/git
-          @saithodev/semantic-release-backmerge
-          @semantic-release/exec
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PARTYKIT_TOKEN: ${{ secrets.PARTYKIT_TOKEN }}
-        PARTYKIT_LOGIN: atomarverseucht
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v6
+        with:
+          tag_format: ${version}
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+            @saithodev/semantic-release-backmerge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build-and-push:
+    name: Build and Push to GHCR
+    needs: release
+    if: needs.release.outputs.new_release_published == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Log in to the Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Extract Metadata for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=${{ needs.release.outputs.new_release_version }}
+            type=ref,event=branch
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
