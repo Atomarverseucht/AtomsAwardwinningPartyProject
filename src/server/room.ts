@@ -1,6 +1,6 @@
 import { Socket } from "socket.io";
 import {Player} from "../shared/Player";
-import {clientPayload, Payload} from "../shared/Payload";
+import type {clientPayload, Payload} from "../shared/Payload";
 
 export class Room {
     public users = new Map<string, Player>();
