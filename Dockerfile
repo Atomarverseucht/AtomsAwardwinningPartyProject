@@ -16,10 +16,10 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY --from=builder /app/build ./build
+COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules ./node_modules
 COPY package.json ./
 
 EXPOSE 3000
 
-CMD ["node", "build/index.js"]
+CMD ["npm", "run", "start"]
