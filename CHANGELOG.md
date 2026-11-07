@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.3...1.0.4) (2026-11-07)
+
+
+### Bug Fixes
+
+* make server actually serve the static html ([7e0db92](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/7e0db92bb4ab6309dd5d19de3ade902c7e42d40d))
+
 ## [1.0.3](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.2...1.0.3) (2026-11-07)
 
 ## [1.0.2](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.1...1.0.2) (2026-11-07)
