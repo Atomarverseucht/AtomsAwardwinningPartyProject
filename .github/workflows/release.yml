@@ -80,3 +80,18 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Execute remote SSH commands using SSH key
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: 22
+          script: |
+            sudo docker pull ghcr.io/atomarverseucht/atomsawardwinningpartyproject:main
+            sudo docker stop party || true
+            sudo docker rm party || true
+            sudo docker run -d --name party -p 3000:3000 --restart unless-stopped \
+              ghcr.io/atomarverseucht/atomsawardwinningpartyproject:main
+            sudo docker image prune -f
