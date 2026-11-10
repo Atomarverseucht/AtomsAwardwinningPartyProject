@@ -86,7 +86,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
             sudo docker pull ghcr.io/atomarverseucht/atomsawardwinningpartyproject:main
