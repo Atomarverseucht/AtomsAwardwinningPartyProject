@@ -42,6 +42,12 @@
     ],
     "@semantic-release/changelog",
     [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "npm version --no-commit-hooks --no-git-tag-version ${nextRelease.version}"
+        }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": [
