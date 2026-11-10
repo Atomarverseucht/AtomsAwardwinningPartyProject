@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.9...1.0.10) (2026-11-10)
+
+
+### Bug Fixes
+
+* express ([11ed1c6](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/11ed1c66e1597c82a5cc25360c6f68a3bae9b556))
+
 ## [1.0.9](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.8...1.0.9) (2026-11-07)
 
 
