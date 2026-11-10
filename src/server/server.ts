@@ -41,18 +41,6 @@ app.get("/api/health", (_req, res) =>
 app.get("/api", (_req, res) =>
     res.json({ info: "This endpoint is not in use" }));
 
-// 1. Serve static files from the built client directory in production
-if (isProduction) {
-    // dist/server -> dist/client
-    const clientPath = path.join(__dirname, "../client");
-    app.use(express.static(clientPath));
-
-    // 2. Fallback route for React Router (SPA support)
-    app.get("*", (_req, res) => {
-        res.sendFile(path.join(clientPath, "index.html"));
-    });
-}
-
 wss.on("connection", async (socket) => {
     const { room, playerID } = socket.handshake.query;
     const roomId = typeof room === "string" ? room : "default";
