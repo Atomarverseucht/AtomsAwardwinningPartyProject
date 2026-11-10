@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.0...1.1.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* Update release.yml ([647fee5](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/647fee54cdef6e999cd17dfe77bdd11857533d43))
+
 # [1.1.0](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.10...1.1.0) (2026-11-10)
 
 
