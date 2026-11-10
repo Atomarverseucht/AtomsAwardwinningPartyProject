@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.8...1.0.9) (2026-11-07)
+
+
+### Bug Fixes
+
+* new build:server skript ([ed4fabe](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/ed4fabeead364c34a8af236c319bcdcaaa8bbee7))
+
 ## [1.0.8](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.7...1.0.8) (2026-11-07)
 
 
