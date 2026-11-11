@@ -1,3 +1,10 @@
+## [1.1.4-dev.4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.3...1.1.4-dev.4) (2026-11-11)
+
+
+### Bug Fixes
+
+* frontend delivery ([8f1a94f](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/8f1a94f627dcba9dcfd18007e9d0a6fe5af942ea))
+
 ## [1.1.4-dev.3](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.2...1.1.4-dev.3) (2026-11-11)
 
 
