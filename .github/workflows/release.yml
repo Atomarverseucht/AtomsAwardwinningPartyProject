@@ -88,10 +88,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: 22
-          script: |
-            sudo docker pull ghcr.io/atomarverseucht/atomsawardwinningpartyproject:main
-            sudo docker stop party || true
-            sudo docker rm party || true
-            sudo docker run -d --name party -p 3000:3000 --restart unless-stopped \
-              ghcr.io/atomarverseucht/atomsawardwinningpartyproject:main
-            sudo docker image prune -f
+          script_path: .github/scripts/deploy.sh
