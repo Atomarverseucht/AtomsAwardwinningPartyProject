@@ -42,7 +42,7 @@ app.use((req, res, next) => {
     ) {
         return next();
     }
-    res.sendFile(path.join(clientDir, "index.html"));
+    res.sendFile(path.join(clientDir, "/client/index.html"));
 });
 
 // ---------- Web-Socket -----------
