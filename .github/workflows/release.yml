@@ -81,11 +81,25 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+  update-image-server:
+    name: Update active Docker image of the server
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
+        env:
+          BRANCH: ${{ github.ref_name }}
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: 22
+          envs: BRANCH
           script_path: .github/scripts/deploy.sh

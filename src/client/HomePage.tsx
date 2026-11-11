@@ -2,6 +2,6 @@ import React from "react";
 
 export default function HomePage() {
     return (
-        <p> This is an example lol.</p>
+        <p> This is an example.</p>
     );
 }
