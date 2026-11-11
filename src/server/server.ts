@@ -33,17 +33,7 @@ const corsOptions = {
 // ---------- Frontend - Endpoint ----------
 
 const clientDir = path.resolve(import.meta.dirname, '../client');
-// SPA-Fallback: alles, was kein API-Call oder Socket.io ist, bekommt die index.html
-app.use((req, res, next) => {
-    if (
-        req.method !== "GET" ||
-        req.path.startsWith("/api") ||
-        req.path.startsWith("/socket.io")
-    ) {
-        return next();
-    }
-    res.sendFile(path.join(clientDir, "/index.html"));
-});
+
 
 // ---------- Web-Socket -----------
 export const wss = new Server(httpServer, {
@@ -58,6 +48,18 @@ app.get("/api", (_req, res) =>
     res.json({ info: "This endpoint is not in use" }));
 
 app.use(express.static(clientDir));
+
+// SPA-Fallback: alles, was kein API-Call oder Socket.io ist, bekommt die index.html
+app.use((req, res, next) => {
+    if (
+        req.method !== "GET" ||
+        req.path.startsWith("/api") ||
+        req.path.startsWith("/socket.io")
+    ) {
+        return next();
+    }
+    res.sendFile(path.join(clientDir, "/index.html"));
+});
 
 wss.on("connection", async (socket) => {
     const { room, playerID } = socket.handshake.query;
