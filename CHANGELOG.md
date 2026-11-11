@@ -1,3 +1,10 @@
+## [1.1.4-dev.3](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.2...1.1.4-dev.3) (2026-11-11)
+
+
+### Bug Fixes
+
+* dev-deploy config v2 ([f665271](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/f665271111f0b065d7ef4e7bdbb8a595ac1615f3))
+
 ## [1.1.4-dev.2](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.1...1.1.4-dev.2) (2026-11-11)
 
 
