@@ -1,3 +1,10 @@
+## [1.1.4-dev.1](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.3...1.1.4-dev.1) (2026-11-11)
+
+
+### Bug Fixes
+
+* dev-deploy test ([37d7ab9](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/37d7ab92ffe58197a727714edc89d3577cff7db5))
+
 ## [1.1.3](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.2...1.1.3) (2026-11-11)
 
 
