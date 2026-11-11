@@ -1,3 +1,19 @@
+## [1.1.4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.3...1.1.4) (2026-11-11)
+
+
+### Bug Fixes
+
+* client delivery test ([9f3f0de](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/9f3f0de06788f0a563b5567ed7afd9acb1369252))
+* client delivery test 2 ([f84c85e](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/f84c85e007f4cae111407dac256913cae5f14a8d))
+* client delivery test 3 ([b01f8a0](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/b01f8a04d6d7aada03483d044ed77d56c9f2aaf0))
+* dev-deploy config ([6ac43bf](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/6ac43bffe2d47873b5a464f8a4e70fac14331e7f))
+* dev-deploy config v2 ([f665271](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/f665271111f0b065d7ef4e7bdbb8a595ac1615f3))
+* dev-deploy test ([37d7ab9](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/37d7ab92ffe58197a727714edc89d3577cff7db5))
+* frontend delivery ([8f1a94f](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/8f1a94f627dcba9dcfd18007e9d0a6fe5af942ea))
+* release action ([6cb9b37](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/6cb9b377e933ff1e5831ef8ad3e8fb20f77b9b61))
+* release action ([660198b](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/660198b08344146abfa41d1ae38269cd1868d901))
+* release action v3 ([e4e0d64](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/e4e0d64067181cb286be867555bdeb41d2d92708))
+
 ## [1.1.4-dev.10](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.9...1.1.4-dev.10) (2026-11-11)
 
 
