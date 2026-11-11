@@ -89,6 +89,9 @@ jobs:
       contents: read
       packages: write
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
         env:
