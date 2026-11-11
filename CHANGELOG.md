@@ -1,3 +1,10 @@
+## [1.1.4-dev.8](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.7...1.1.4-dev.8) (2026-11-11)
+
+
+### Bug Fixes
+
+* client delivery test ([9f3f0de](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/9f3f0de06788f0a563b5567ed7afd9acb1369252))
+
 ## [1.1.4-dev.7](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.6...1.1.4-dev.7) (2026-11-11)
 
 
