@@ -32,7 +32,7 @@ const corsOptions = {
 
 // ---------- Frontend - Endpoint ----------
 
-const clientDir = path.resolve(import.meta.dirname, '..');
+const clientDir = path.resolve(import.meta.dirname, '../client');
 // SPA-Fallback: alles, was kein API-Call oder Socket.io ist, bekommt die index.html
 app.use((req, res, next) => {
     if (
@@ -42,7 +42,7 @@ app.use((req, res, next) => {
     ) {
         return next();
     }
-    res.sendFile(path.join(clientDir, "/client/index.html"));
+    res.sendFile(path.join(clientDir, "/index.html"));
 });
 
 // ---------- Web-Socket -----------
