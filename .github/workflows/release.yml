@@ -81,6 +81,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+  update-image-server:
+    name: Update active Docker image of the server
+    needs: release
+    if: needs.release.outputs.new_release_published == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
         env:
