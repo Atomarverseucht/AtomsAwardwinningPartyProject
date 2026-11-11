@@ -1,3 +1,30 @@
+## [1.1.2](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.1...1.1.2) (2026-11-10)
+
+
+### Bug Fixes
+
+* Update release.yml ([39da6b4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/39da6b4002aea7c94c44c23776204ec23ab8dc98))
+
+## [1.1.1](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.0...1.1.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* Update release.yml ([647fee5](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/647fee54cdef6e999cd17dfe77bdd11857533d43))
+
+# [1.1.0](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.10...1.1.0) (2026-11-10)
+
+
+### Bug Fixes
+
+* semantic release ([0383012](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/03830128e279e7d93fa78b51cb0cd21f5bbcad11))
+* semantic release ([c10a5f3](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/c10a5f37908b273c168f742666fc83b5bec722e1))
+
+
+### Features
+
+* Update release.yml ([3328004](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/3328004d3324a8b19a84cccb97ade873c9402913))
+
 ## [1.0.10](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.0.9...1.0.10) (2026-11-10)
 
 
