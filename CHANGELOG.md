@@ -1,3 +1,10 @@
+## [1.1.4-dev.6](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.5...1.1.4-dev.6) (2026-11-11)
+
+
+### Bug Fixes
+
+* release action ([6cb9b37](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/6cb9b377e933ff1e5831ef8ad3e8fb20f77b9b61))
+
 ## [1.1.4-dev.5](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4-dev.4...1.1.4-dev.5) (2026-11-11)
 
 
