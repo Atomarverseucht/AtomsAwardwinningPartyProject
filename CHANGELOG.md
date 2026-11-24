@@ -1,3 +1,10 @@
+# [1.2.0-dev.1](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.4...1.2.0-dev.1) (2026-11-24)
+
+
+### Features
+
+* Test3Fiber ([854f735](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/commit/854f735a20f8a152f6ee3a191fc44829840e6998))
+
 ## [1.1.4](https://github.com/Atomarverseucht/AtomsAwardwinningPartyProject/compare/1.1.3...1.1.4) (2026-11-11)
 
 
