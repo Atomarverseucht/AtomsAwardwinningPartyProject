@@ -2,6 +2,7 @@ import { Routes, Route} from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
+import Test3Fiber from "./test/Test3Fiber";
 
 export function App() {
     return (
@@ -11,7 +12,8 @@ export function App() {
             </section>
 
             <Routes>
-                { <Route path="/" element={<HomePage />} /> }
+                <Route path="/" element={<HomePage />} />
+                <Route path="/test" element={<Test3Fiber />}/>
             </Routes>
         </>
     );
